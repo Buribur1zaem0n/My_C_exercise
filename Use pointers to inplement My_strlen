@@ -1,0 +1,9 @@
+int My_strlen (char * arr)
+{
+char* start = arr;
+if (arr != '\0')
+{
+arr++;
+}
+return (arr - start);
+}
