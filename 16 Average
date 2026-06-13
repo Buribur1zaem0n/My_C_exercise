@@ -1,0 +1,4 @@
+double average(int a, int b)
+{
+	return (a * 0.5 + b * 0.5);
+}
