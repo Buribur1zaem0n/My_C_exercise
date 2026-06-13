@@ -1,0 +1,12 @@
+int get_the_number_of_days_in_a_month(int year,int month)
+{
+	int days[] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
+	if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
+	{
+		if (month == 2)
+		{
+			return 29;
+		}
+	}
+	return days[month];
+}
