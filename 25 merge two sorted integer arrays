@@ -1,0 +1,19 @@
+void merge_sorted_arrays(int* arr1, int* arr2 , int len1 ,int len2,int* result)
+{
+	int s1 = 0;
+	int s2 = 0;
+	int sr = 0;
+	while (s1<len1 && s2<len2)
+	{
+		if (arr1[s1] > arr2[s2])
+		{
+			result[sr++] = arr2[s2++];
+		}
+		else
+		{
+			result[sr++] = arr1[s1++];
+		}
+	}
+	while (s1 < len1) result[sr++] = arr1[s1++];
+	while (s2 < len2) result[sr++] = arr2[s2++];
+}
