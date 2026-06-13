@@ -1,0 +1,15 @@
+void reverse_char(char* arr)
+{
+	assert(arr);
+	if (!arr || !*arr) return;
+	int start = 0;
+	int end = (int)strlen(arr) - 1;
+	while (start < end)
+	{
+		char temp = arr[end];
+		arr[end] = arr[start];
+		arr[start] = temp;
+		start++;
+		end--;
+	}
+}
