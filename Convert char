@@ -1,0 +1,17 @@
+void convert_char(char* arr)
+{
+	int i = 0;
+	int len = strlen(arr);
+	while (i < len )
+	{
+		if (arr[i] >= 'a' && arr[i] <= 'z')
+		{
+			arr[i] = arr[i] - 32;
+		}
+		else if (arr[i] >= 'A' && arr[i] <= 'Z')
+		{
+			arr[i] = arr[i] + 32;
+		}
+		i++;
+	}
+}
