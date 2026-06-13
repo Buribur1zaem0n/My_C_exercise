@@ -1,5 +1,6 @@
 int get_the_number_of_days_in_a_month(int year,int month)
 {
+	if (month < 1 || month > 13 || year < 0) return 0;
 	int days[] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
 	if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
 	{
