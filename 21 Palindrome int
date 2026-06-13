@@ -1,0 +1,16 @@
+bool is_Palindrome(const char* arr)
+{
+	if (!arr || !*arr) return false;
+	int start = 0;
+	int end = (int)strlen(arr) - 1;
+	while (start < end)
+	{
+		if (arr[start] != arr[end])
+		{
+			return false;
+		}
+		start++;
+		end--;
+	}
+	return true;
+}
